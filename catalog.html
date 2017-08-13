@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <section class="header-top">
+            <span class="logo">DEVICE</span>
+            <ul>
+                <li>Поиск по сайту</li>
+                <li><a href="#">Войти</a></li>
+                <li><a href="#">Сравнить</a></li>
+                <li><a href="#">Корзина</a></li>
+            </ul>
+        </section>
+        <section class="header-bottom">
+            <ul>
+                <li><a href="#">Каталог товаров</a></li>
+                <ul class="catalog-navigation-hidden">
+                    <li class="col-1"><a href="#">Виртуальная реальность</a></li>
+                    <li class="col-1"><a href="#">Моноподы для селфи</a></li>
+                    <li class="col-1"><a href="#">Экшн-камеры</a></li>
+                    <li class="col-2"><a href="#">Фитнесс-браслеты</a></li>
+                    <li class="col-2"><a href="#">Умные часы</a></li>
+                    <li class="col-3"><a href="#">Квадрокоптеры</a></li>
+                </ul>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <h1>Моноподы для селфи</h1>
+        <ul id="breadcrumbs">
+            <li><a href="/index.html">Главная</a></li>
+            <li><a href="/catalog.html">Каталог</a></li>
+            <li><a href="#" class="current">Моноподы для селфи</a></li>
+            <section class="filter">
+                <h2 class="visually-hidden">Фильтр товаров</h2>
+                <form action="">
+
+                    <section class="filter-slider">
+                        <h3>Стоимость</h3>
+                        <div class="filter-price-slider">
+
+                        </div>
+                    </section>
+
+                    <section class="filter-color-selection">
+                        <h3>Цвет</h3>
+                        <ul>
+                            <li><label for="black"><input type="checkbox" id="black" checked>Черный</label></li>
+                            <li><label for="white"><input type="checkbox" id="white">Белый</label></li>
+                            <li><label for="blue"><input type="checkbox" id="blue" checked>Синий</label></li>
+                            <li><label for="red"><input type="checkbox" id="red" checked>Красный</label></li>
+                            <li><label for="pink"><input type="checkbox" id="pink">Розовый</label></li>
+                        </ul>
+                    </section>
+
+                    <section class="filter-bluetooth-selection">
+                        <ul>
+                            <li><label for="yes"><input type="radio" id="yes" name="bluetooth">Черный</label></li>
+                            <li><label for="no"><input type="radio" id="no" name="bluetooth">Черный</label></li>
+                        </ul>
+                    </section>
+                    <input type="submit" class="btn-style" value="Показать">
+                </form>
+            </section>
+            <section class="grid-of-goods">
+            <header class="header-grid-of-goods">
+                <h3>Сортировка:</h3>
+                <ul>
+                    <li><a href="#">По цене</a></li>
+                    <li><a href="#">По типу</a></li>
+                    <li><a href="#">По популярности</a></li>
+                    <li><a href="#">UP</a></li>
+                    <li><a href="#">DOWN</a></li>
+                </ul>
+            </header>
+            <section class="grid">
+                <div class="grid-item">
+                    <img src="http://placehold.it/150x100">
+                    <p><b>Любительская селфи-палка</b>500 руб.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="http://placehold.it/150x100">
+                    <p><b>Профессиональная селфи-палка</b>1500 руб.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="http://placehold.it/150x100">
+                    <p><b>Непотопляемая селфи-палка</b>2500 руб.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="http://placehold.it/150x100">
+                    <p><b>Селфи-палка "Следуй за мной"</b>4900 руб.</p>
+                </div>
+            </section>
+            <footer class="footer-grid-of-goods">
+                <ul>
+                    <li><a href="#">Назад</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">Вперед</a></li>
+                </ul>
+            </footer>
+            </section>
+        </ul>
+    </main>
+    <footer>
+        <section class="footer-top">
+            <span class="logo footer">DEVICE</span>
+            <ul>
+                <li><a href="#">Войти</a></li>
+                <li><a href="#">Сравнить</a></li>
+                <li><a href="#">Корзина</a></li>
+            </ul>
+        </section>
+        <section class="footer-middle">
+            <ul>
+                <li>г.Москва, ул.Строителей, 15</li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li>Тел.: +7(495)495-95-95</li>
+            </ul>
+        </section>
+        <section class="footer-bottom">
+            <ul class="social-buttons">
+                <li><a href="#" class="social-btn-facebook">F</a></li>
+                <li><a href="#" class="social-btn-instagram">I</a></li>
+                <li><a href="#" class="social-btn-twitter">T</a></li>
+            </ul>
+            <section class="copyright">
+                <span class="icon">HTMLAcademy</span>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>
