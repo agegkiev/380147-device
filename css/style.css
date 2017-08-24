@@ -1,10 +1,21 @@
 html{
  box-sizing: border-box;
 }
+
 *, *::before, *::after{
  box-sizing: inherit;
 }
 
-.product-list li{
-    display: inline-block;
+a {
+    text-decoration: none;
+    
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+ul {
+    padding: 0;    
 }
