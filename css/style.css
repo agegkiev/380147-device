@@ -1,21 +1,42 @@
-html{
- box-sizing: border-box;
+@font-face {
+    font-family: "Gilroy";
+    src: url("/fonts/gilroyextrabold.woff") format("woff");
+    src: url("/fonts/gilroylight.woff") format("woff");
 }
 
-*, *::before, *::after{
- box-sizing: inherit;
+@font-face {
+    font-family: "OpenSans";
+    src: url("/fonts/opensan.woff") format("woff");
+    src: url("/fonts/opensanslight.woff") format("woff");
 }
 
-a {
-    text-decoration: none;
-    
+html {
+    box-sizing: border-box;
 }
 
-li {
-    list-style-type: none;
-    
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
-ul {
-    padding: 0;    
+body {
+    font-family: "OpenSans", "Tahoma", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Gilroy", "Arial Black", sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
