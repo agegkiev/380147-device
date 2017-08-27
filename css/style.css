@@ -85,7 +85,8 @@ th {
     font-size: 15px;
 }
 
-.header-top li {
+.header-top li, 
+.footer-top li {
     display: inline-block;
 }
 
@@ -191,7 +192,11 @@ th {
     font-family: "OpenSans";
     font-weight: 300;
     font-style: normal;
-    font-size: 15px;
+    font-size: 15px;    
+}
+
+.footer-middle li {
+    display: inline-block;
 }
 
 .info li {
@@ -203,3 +208,82 @@ th {
     line-height: 40px;    
 }
  
+.breadcrumbs {
+    font-family: "OpenSans";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;    
+    margin: 0;
+    padding: 0;    
+}
+
+.breadcrumbs li{
+    display: inline-block;
+}
+
+main h1 {
+    font-size: 47px;
+}
+
+.filter legend {
+    list-style: none;
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.filter h2 {
+    font-size: 16px;
+}
+
+.filter:not(legend):not(.filter-slide) {
+    font-family: "OpenSans";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;  
+}
+
+.goods-header h3, 
+.goods-footer ul {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.goods-header ul {
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.goods-header li,
+.goods-footer li {
+    display: inline-block;
+}
+
+.item p {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.item span {
+    font-family: "Gilroy";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.menu-hover li:last-child {
+    font-family: "OpenSans";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;  
+}

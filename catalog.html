@@ -12,28 +12,28 @@
     <header>
         <div class="wrapper">
             <div class="header-top">
-                <a href="index.html" class="logo">DEVICE</a>
-                <div>
-                    <form action="https://echo.htmlacademy.ru">
-                        <img src="img/search.svg" alt="Поиск по сайту">
-                        <input type="text" placeholder="Поиск по сайту">
-                        <input type="submit" value="Найти">
-                    </form>
-                </div>
+                <a href="index.html"><img src="img/device-logo-header.svg" alt="DEVICE" class="logo-header"></a>
+
+                <form action="https://echo.htmlacademy.ru">
+                    <img src="img/search.svg" alt="Поиск по сайту">
+                    <input type="search" placeholder="Поиск по сайту">
+                    <input type="submit" value="Найти" class="button-hover">
+                </form>
+
                 <ul>
                     <li>
                         <a href="#"><img src="img/user.svg" alt="Войти"> Войти</a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/compare.svg" alt="Войти"> Сравнить</a>
+                        <a href="#"><img src="img/compare.svg" alt="Сравнить"> Сравнить</a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/cart.svg" alt="Войти"> Корзина</a>
+                        <a href="#"><img src="img/cart.svg" alt="Корзина"> Корзина</a>
                     </li>
                 </ul>
             </div>
             <div class="header-bottom">
-                <ul>
+                <ul class="catalog">
                     <li><a href="#">Каталог товаров <img src="img/plus.svg" alt="открыть каталог товаров"></a>
                         <ul class="catalog-navigation-hidden">
                             <li class="col-1"><a href="#">Виртуальная реальность</a></li>
@@ -44,23 +44,26 @@
                             <li class="col-3"><a href="#">Квадрокоптеры</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Гарантия</a></li>
+                </ul>
+                <ul class="user-interface">
+                    <li><a href="#services">Доставка</a></li>
+                    <li><a href="#services">Гарантия</a></li>
                     <li><a href="#info">Контакты</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <main>
+       <div class="wrapper">
         <h1>Моноподы для селфи</h1>
-        <ul id="breadcrumbs">
-            <li><a href="/index.html">Главная</a></li>
-            <li><a href="/catalog.html">Каталог</a></li>
+        <ul class="breadcrumbs" id="breadcrumbs">
+            <li><a href="/index.html">Главная &#62;</a></li>
+            <li><a href="/catalog.html">Каталог &#62;</a></li>
             <li><span class="current">Моноподы для селфи</span></li>
         </ul>
-        <div class="wrapper">
+        
             <section class="filter">
-               <h2>Фильтр</h2>
+               <h2>Фильтр:</h2>
                 <form action="https://echo.htmlacademy.ru">
                     <fieldset class="filter-slider">
                         <legend>Стоимость</legend>
@@ -79,9 +82,10 @@
                         </ul>
                     </fieldset>
                     <fieldset class="filter-bluetooth-selection">
+                       <legend>Bluetooth</legend>
                         <ul>
-                            <li><label for="yes"><input type="radio" id="yes" name="bluetooth">Черный</label></li>
-                            <li><label for="no"><input type="radio" id="no" name="bluetooth">Черный</label></li>
+                            <li><label for="yes"><input type="radio" id="yes" name="bluetooth">Есть</label></li>
+                            <li><label for="no"><input type="radio" id="no" name="bluetooth">Нет</label></li>
                         </ul>
                     </fieldset>
                     <input type="submit" class="btn-style" value="Показать">
@@ -103,7 +107,7 @@
                         <img src="img/item-1.jpg" alt="Любительская селфи-палка">
                         <div class="menu-hover">
                             <ul>
-                                <li><a href="#">В корзину</a></li>
+                                <li><a href="#" class="btn-style">В корзину</a></li>
                                 <li><a href="#">Сравнить</a></li>
                             </ul>
                         </div>
@@ -116,7 +120,7 @@
                         <img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
                         <div class="menu-hover">
                             <ul>
-                                <li><a href="#">В корзину</a></li>
+                                <li><a href="#" class="btn-style">В корзину</a></li>
                                 <li><a href="#">Сравнить</a></li>
                             </ul>
                         </div>
@@ -129,7 +133,7 @@
                         <img src="img/item-3.jpg" alt="непотопляемая селфи-палка">
                         <div class="menu-hover">
                             <ul>
-                                <li><a href="#">В корзину</a></li>
+                                <li><a href="#" class="btn-style">В корзину</a></li>
                                 <li><a href="#">Сравнить</a></li>
                             </ul>
                         </div>
@@ -142,7 +146,7 @@
                         <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
                         <div class="menu-hover">
                             <ul>
-                                <li><a href="#">В корзину</a></li>
+                                <li><a href="#" class="btn-style">В корзину</a></li>
                                 <li><a href="#">Сравнить</a></li>
                             </ul>
                         </div>
@@ -152,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <footer class="footer-grid-of-goods">
+                <footer class="goods-footer">
                     <ul>
                         <li><a href="#">Назад</a></li>
                         <li><a href="#">1</a></li>
@@ -164,10 +168,10 @@
             </section>
         </div>
     </main>
-    <footer>
+     <footer>
         <div class="wrapper">
             <div class="footer-top">
-                <a href="index.html" class="logo footer">DEVICE</a>
+                <img src="img/device-logo-footer.svg" alt="DEVICE" class="logo-footer">
                 <ul>
                     <li>
                         <a href="#"><img src="img/user.svg" alt="Войти">Войти</a>
@@ -184,8 +188,8 @@
                 <p>г.Москва, ул.Строителей, 15</p>
                 <ul>
                     <li><a href="#services"> Доставка</a></li>
-                    <li><a href="#services">Гарантия</a></li>
-                    <li><a href="#info">Контакты</a></li>
+                    <li><a href="#services"> Гарантия</a></li>
+                    <li><a href="#info"> Контакты</a></li>
                 </ul>
                 <p>Тел.: +7(495)495-95-95</p>
             </div>
