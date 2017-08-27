@@ -28,8 +28,9 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: "OpenSans", "Tahoma", sans-serif;
-    color: black;
+    color: black;    
 }
 
 a {
@@ -64,9 +65,120 @@ th {
     height: 1px;
     margin: -1px;
 }
-.wrapper {
-    margin: 0 140px;
-    min-width: 1160px;
+
+.page-header, 
+.page-main,
+.page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
+ 
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    padding: 53px 57px 163px 59px;
+    background-color: #f7e296;
+    margin-top: 40px;
+    width: 1160px;
+    height: 299px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 41px;
+    letter-spacing: 0.02em;
+}
+
+.search input {
+    border: none;
+    background-color: inherit;
+    margin-left: 19px;
+    position: relative;
+    bottom: 4px;    
+}
+
+.servic-interface li:nth-child(1) {
+    justify-content: space-between;
+}
+
+.plus {
+    position: relative;
+    left: 4px;
+    top: 2px
+}
+
+.button-hover {
+    display: none;
+}
+
+.search img {
+    position: relative;
+    bottom: 2px;
+    left: 4px
+}
+
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;    
+}
+.user-interfac {
+    position: relative;
+    bottom: 3px;
+    letter-spacing: 0.01em
+}
+.user-interfac li:last-child {
+    position: relative;
+    right: 3px;
+}
+
+.user-interfac img:last-child {
+    margin-right: 6px;
+}
+
+.user-interfac li:nth-child(2) {
+    position: relative;
+    right: 40px;    
+}
+
+.pixelperfect img {
+    position: relative;
+    right: 3px;
+}
+
+.user-interfac li:nth-child(1) {
+    position: relative;
+    right: 253px;    
+}
+
+
+
+
+
+.catalog-navigation-hidden {
+    display: none;
+}
+
+.servic-interface {
+    text-transform: uppercase;
+    
+}
+
+.servic-interface li:first-child {
+    margin-right: 26px;
+}
+
+.servic-interface li:nth-child(2) {
+    margin-right: 100px;
+}
+.servic-interface li:nth-child(3) {
+    margin-right: -1px
 }
 
 .btn-style {
@@ -76,6 +188,13 @@ th {
     font-size: 18px;
     text-transform: uppercase;
 }
+
+.logo-header {
+    position: absolute;
+    left: 190px;
+    top: 11px;
+}
+
 
 .header-top ul,
 .footer-top {    
@@ -88,7 +207,8 @@ th {
 }
 
 .header-top li, 
-.footer-top li {
+.footer-top li,
+.servic-interface li {
     display: inline-block;
 }
 
@@ -100,17 +220,18 @@ th {
 }
 
 .header-bottom,
-.footer-middle {
+.footer-middle:not(p) {
     font-family: "Gilroy";
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
     
+    
 }
 
 .catalog,
 .catalog-navigation-hidden, 
-.user-interface, 
+.servic-interface, 
 .footer-top ul,
 .footer-middle ul,
 .social-buttons {
