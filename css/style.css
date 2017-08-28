@@ -84,6 +84,7 @@ th {
     margin-top: 40px;
     width: 1160px;
     height: 299px;
+    position: relative;
 }
 
 .header-top {
@@ -157,14 +158,6 @@ th {
     right: 253px;    
 }
 
-
-
-
-
-.catalog-navigation-hidden {
-    display: none;
-}
-
 .servic-interface {
     text-transform: uppercase;
     
@@ -191,10 +184,14 @@ th {
 
 .logo-header {
     position: absolute;
-    left: 190px;
-    top: 11px;
+    left: 58px;
+    top: -30px;
 }
 
+.catalog:hover .catalog-navigation-hidden{
+    display: inline-block;
+    
+}
 
 .header-top ul,
 .footer-top {    
@@ -225,8 +222,6 @@ th {
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
-    
-    
 }
 
 .catalog,
@@ -245,6 +240,18 @@ th {
     font-weight: 300;
     font-style: normal;
     font-size: 15px;
+}
+
+.catalog-navigation-hidden {
+    position: absolute;
+    width: 1160px;
+    height: 129px;
+    text-transform: none;
+    line-height: 36px;
+    
+    left: 0;
+    bottom: 0;
+    padding-left: 60px;
 }
 
 .promo-sliders p:first-of-type {
