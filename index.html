@@ -16,9 +16,11 @@
             <a href="index.html"><img src="img/device-logo-header.svg" alt="DEVICE" class="logo-header"></a>
             <div class="header-top">
                 <form action="https://echo.htmlacademy.ru" class="search">
-                    <img src="img/search.svg" alt="Поиск по сайту">
-                    <input type="search" placeholder="Поиск по сайту">
-                    <input type="submit" value="Найти" class="button-hover">
+                    <div class="search-style">
+                        <img src="img/search.svg" alt="Поиск по сайту">
+                        <input type="search" placeholder="Поиск по сайту">
+                        <input type="submit" value="Найти" class="button-hover">
+                    </div>
                 </form>
                 <ul class="user-interfac">
                     <li>
@@ -34,15 +36,27 @@
             </div>
             <div class="header-bottom">
                 <ul class="catalog">
-                    <li><a href="#">Каталог товаров <img src="img/plus.svg" alt="открыть каталог товаров" class="plus"></a>
-                        <ul class="catalog-navigation-hidden">
-                            <li><a href="#">Виртуальная реальность</a></li>
-                            <li><a href="#">Моноподы для селфи</a></li>
-                            <li><a href="#">Экшн-камеры</a></li>
-                            <li><a href="#">Фитнесс-браслеты</a></li>
-                            <li><a href="#">Умные часы</a></li>
-                            <li><a href="#">Квадрокоптеры</a></li>
-                        </ul>
+                    <li><a href="#" class="catalog-first-item">Каталог товаров </a><img src="img/plus.svg" alt="открыть каталог товаров" class="plus">
+                        <div class="catalog-navigation-hidden">
+                            <div class="column">
+                                <ul class="column-1">
+                                    <li><a href="#">Виртуальная реальность</a></li>
+                                    <li><a href="#">Моноподы для селфи</a></li>
+                                    <li><a href="#">Экшн-камеры</a></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <ul class="column-2">
+                                    <li><a href="#">Фитнесс-браслеты</a></li>
+                                    <li><a href="#">Умные часы</a></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <ul class="column-3">
+                                    <li><a href="#">Квадрокоптеры</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <ul class="servic-interface">
