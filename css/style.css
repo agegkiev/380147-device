@@ -66,30 +66,31 @@ th {
     margin: -1px;
 }
 
-.page-header,
-.page-footer {
+.page-header {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     min-width: 1160px;
 }
 
-.container-main {
+
+
+.page-main {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    align-content: space-around;        
     min-width: 1160px;
-    background-color: #666;
-    
 }
+
 
 .container-header {
     display: flex;
     flex-direction: column;
-    padding: 53px 57px 163px 59px;
-    background-color: #f7e296;
+    padding: 54px 57px 163px 59px;    
     margin-top: 40px;
     min-width: 1160px;
     height: 299px;
+    background-color: #f7e296;
     position: relative;
 }
 
@@ -130,26 +131,27 @@ th {
     justify-content: space-between;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    
 }
 
-.user-interfac {
+.user-interface {
     display: flex;
     position: relative;
     bottom: 3px;
     letter-spacing: 0.01em;
 }
 
-.user-interfac li:last-child {
+.user-interface li:last-child {
     position: relative;
     right: 3px;
 }
 
-.user-interfac li:nth-child(1) {
+.user-interface li:nth-child(1) {
     position: relative;
     right: 273px;
 }
 
-.user-interfac li:nth-child(2) {
+.user-interface li:nth-child(2) {
     position: relative;
     right: 50px;
 }
@@ -543,4 +545,59 @@ input[type="submit"]:active {
 input[type="search"]:focus~input[type="submit"] {
     transition-duration: 10s;
     display: inline-block;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #6a6a6a;
+    color: white;
+    
+}
+
+.container-footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;    
+    min-width: 1160px;
+    height: 323px;
+    padding: 70px 0 67px;    
+}
+
+.logo-footer {
+    position: absolute;
+    left: -2px;
+    top: 55px;
+}
+
+.footer-top {
+    align-self: flex-end;
+}
+
+.footer-user-interface {
+    display: flex;
+    justify-content: space-between;
+    width: 299px;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 49px;
+}
+.footer-service-interface {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+
+.footer-bottom {
+    
+}
+
+.footer-top  {
+    color: white;
 }
