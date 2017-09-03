@@ -86,7 +86,7 @@ th {
     display: flex;
     justify-content: space-around;
     min-width: 1160px;
-    background-color: #6a6a6a;
+    background-color: #6a6a6a;  
 }
 
 
@@ -104,27 +104,30 @@ th {
 .container-footer {
     display: flex;
     position: relative;
-    flex-direction: column;
+    flex-direction: column;    
+    justify-content: space-between;
     min-width: 1160px;
     height: 323px;
-    padding: 70px 0 67px;
-    color: white;
+    padding: 70px 0 47px;
 }
 
 .header-top {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 41px;
+    justify-content: space-between;    
+    margin-bottom: 47px;
     letter-spacing: 0.02em;
+    margin-top: -4px;
 }
 
 .search input {
     border: none;
     background-color: inherit;
     margin-left: 19px;
+    margin-top: 3px;
     position: relative;
-    bottom: 4px;
+    letter-spacing: 0.016em;
 }
+
 
 .servic-interface li:nth-child(1) {
     justify-content: space-between;
@@ -137,11 +140,7 @@ th {
     opacity: 0.6;
 }
 
-.search img {
-    position: relative;
-    bottom: 2px;
-    left: 4px
-}
+
 
 .header-bottom {
     display: flex;
@@ -151,31 +150,27 @@ th {
     
 }
 
+
 .user-interface {
     display: flex;
-    position: relative;
-    bottom: 3px;
+    justify-content: space-between;
+    width: 494px;
     letter-spacing: 0.01em;
+    
 }
 
-.user-interface li:last-child {
-    position: relative;
-    right: 3px;
+.compare {
+    margin-left: 176px;
 }
 
-.user-interface li:nth-child(1) {
-    position: relative;
-    right: 273px;
+.cart {
+    margin-right: 3px;    
 }
 
-.user-interface li:nth-child(2) {
-    position: relative;
-    right: 50px;
-}
 
 .header-top li:hover,
 .header-top li:hover,
-.logo-header:hover,
+.logo-header-hover:hover,
 .servic-interface li:hover,
 .column-1 li:hover,
 .column-2 li:hover,
@@ -186,7 +181,7 @@ a.catalog-first-item:hover {
 
 .header-top li:active,
 .header-top li:active,
-.logo-header:active,
+.logo-header-hover:active,
 .servic-interface li:active,
 .column-1 li:active,
 .column-2 li:active,
@@ -261,12 +256,14 @@ a.catalog-first-item:active {
     font-weight: 300;
     font-style: normal;
     font-size: 15px;
+    
 }
 
 .header-top li,
 .footer-top li,
 .servic-interface li {
     display: inline-block;
+    
 }
 
 .header-top input {
@@ -520,9 +517,9 @@ input[type="search"]::placeholder {
 
 .search-style::after {
     content: url(../img/search.svg);
-    position: relative;
-    left: 5px;
-    top: -2px;
+    position: absolute;
+    left: 4px;
+    top: 1px;
 }
 
 input[type="search"]:hover::placeholder {
@@ -573,10 +570,6 @@ input[type="search"]:focus~input[type="submit"] {
     display: inline-block;
 }
 
-
-
-
-
 .logo-footer {
     position: absolute;
     left: -2px;
@@ -584,33 +577,86 @@ input[type="search"]:focus~input[type="submit"] {
 }
 
 .footer-top {
-    align-self: flex-end;
+    align-self: flex-end;    
 }
 
 .footer-user-interface {
     display: flex;
+    position: relative;
     justify-content: space-between;
     width: 299px;
 }
+
+.user-footer::before {
+    content: url(/img/user.svg);
+    position: absolute;
+    left: -26px;
+}
+
+.compare-footer::before {
+    content: url(/img/compare.svg);
+    position: absolute;
+    left: 87px;
+}
+
+.cart-footer::before {
+    content: url(/img/cart.svg);
+    position: absolute;
+    right: 70px;
+}
+
 
 .footer-middle {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    top: 49px;
-}
-.footer-service-interface {
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-}
-
-
-.footer-bottom {
     
 }
 
-.footer-top  {
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-service-interface {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.footer-service-interface li:first-child {
+    margin-left: -27px;
+}
+
+.footer-service-interface li:nth-child(2){
+    margin-left: 2px;
+}
+
+.footer-service-interface li:nth-child(3) {
+    margin-right: 10px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    margin-top: 17px;
+    margin-left: -52px;
+}
+
+.page-footer a {
     color: white;
+}
+
+.page-footer p {
+    color: white;
+}
+
+.footer-decor {
+    width: 80px;
+    border-bottom: 7px solid #ffc600;
+    align-self: center;
+    
 }
