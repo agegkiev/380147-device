@@ -31,6 +31,9 @@ body {
     padding: 0;
     font-family: "OpenSans", "Tahoma", sans-serif;
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 a {
@@ -68,18 +71,22 @@ th {
 
 .page-header {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     min-width: 1160px;
 }
 
 
-
 .page-main {
     display: flex;
     flex-direction: column;
-    align-content: space-around;        
     min-width: 1160px;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-around;
+    min-width: 1160px;
+    background-color: #6a6a6a;
 }
 
 
@@ -92,6 +99,16 @@ th {
     height: 299px;
     background-color: #f7e296;
     position: relative;
+}
+
+.container-footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-width: 1160px;
+    height: 323px;
+    padding: 70px 0 67px;
+    color: white;
 }
 
 .header-top {
@@ -322,6 +339,15 @@ a.catalog-first-item:active {
     color: #666;
 }
 
+.promo-sliders,
+.popular,
+.services,
+.brands,
+.info {
+    min-width: 1160px;
+    margin: 0 auto;
+}
+
 .slider th {
     font-family: "Gilroy";
     font-weight: normal;
@@ -547,22 +573,9 @@ input[type="search"]:focus~input[type="submit"] {
     display: inline-block;
 }
 
-.page-footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #6a6a6a;
-    color: white;
-    
-}
 
-.container-footer {
-    display: flex;
-    position: relative;
-    flex-direction: column;    
-    min-width: 1160px;
-    height: 323px;
-    padding: 70px 0 67px;    
-}
+
+
 
 .logo-footer {
     position: absolute;
