@@ -9,49 +9,63 @@
 </head>
 
 <body>
-    <header>
-        <div class="wrapper">
+<header class="page-header">
+
+        <div class="container-header">
+
+            <img src="img/device-logo-header.svg" alt="DEVICE" class="logo-header-hover logo-header">
             <div class="header-top">
-                <a href="index.html"><img src="img/device-logo-header.svg" alt="DEVICE" class="logo-header"></a>
-
-                <form action="https://echo.htmlacademy.ru">
-                    <img src="img/search.svg" alt="Поиск по сайту">
-                    <input type="search" placeholder="Поиск по сайту">
-                    <input type="submit" value="Найти" class="button-hover">
+                <form action="https://echo.htmlacademy.ru" class="search">
+                    <div class="search-style">
+                        <input type="search" placeholder="Поиск по сайту">
+                        <input type="submit" value="Найти" class="button-hover">
+                    </div>
                 </form>
-
-                <ul>
+                <ul class="user-interface">
                     <li>
-                        <a href="#"><img src="img/user.svg" alt="Войти"> Войти</a>
+                        <a href="#" class="user"> Войти</a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/compare.svg" alt="Сравнить"> Сравнить</a>
+                        <a href="#" class="compare"> Сравнить</a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/cart.svg" alt="Корзина"> Корзина</a>
+                        <a href="#" class="cart"> Корзина</a>
                     </li>
                 </ul>
             </div>
             <div class="header-bottom">
                 <ul class="catalog">
-                    <li><a href="#">Каталог товаров <img src="img/plus.svg" alt="открыть каталог товаров"></a>
-                        <ul class="catalog-navigation-hidden">
-                            <li class="col-1"><a href="#">Виртуальная реальность</a></li>
-                            <li class="col-1"><a href="#">Моноподы для селфи</a></li>
-                            <li class="col-1"><a href="#">Экшн-камеры</a></li>
-                            <li class="col-2"><a href="#">Фитнесс-браслеты</a></li>
-                            <li class="col-2"><a href="#">Умные часы</a></li>
-                            <li class="col-3"><a href="#">Квадрокоптеры</a></li>
-                        </ul>
+                    <li><a href="#" class="catalog-first-item">Каталог товаров </a><img src="img/plus.svg" alt="открыть каталог товаров" class="plus">
+                        <div class="catalog-navigation-hidden">
+                            <div class="column">
+                                <ul class="column-1">
+                                    <li><a href="#">Виртуальная реальность</a></li>
+                                    <li><a href="#">Моноподы для селфи</a></li>
+                                    <li><a href="#">Экшн-камеры</a></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <ul class="column-2">
+                                    <li><a href="#">Фитнесс-браслеты</a></li>
+                                    <li><a href="#">Умные часы</a></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <ul class="column-3">
+                                    <li><a href="#">Квадрокоптеры</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                 </ul>
-                <ul class="user-interface">
+                <ul class="servic-interface">
                     <li><a href="#services">Доставка</a></li>
                     <li><a href="#services">Гарантия</a></li>
                     <li><a href="#info">Контакты</a></li>
                 </ul>
             </div>
         </div>
+
     </header>
     <main>
        <div class="wrapper">
@@ -172,32 +186,33 @@
             </section>
         </div>
     </main>
-     <footer>
-        <div class="wrapper">
+<footer class="page-footer">
+        <div class="container-footer">
             <div class="footer-top">
                 <img src="img/device-logo-footer.svg" alt="DEVICE" class="logo-footer">
-                <ul>
+                <ul class="footer-user-interface">
                     <li>
-                        <a href="#"><img src="img/user.svg" alt="Войти">Войти</a>
+                        <a href="#" class="user-footer">Войти</a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/compare.svg" alt="Сравнить"> Сравнить</a>
+                        <a href="#" class="compare-footer">Сравнить</a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/cart.svg" alt="Корзина"> Корзина</a>
+                        <a href="#" class="cart-footer">Корзина</a>
                     </li>
                 </ul>
             </div>
             <div class="footer-middle">
-                <p>г.Москва, ул.Строителей, 15</p>
-                <ul>
+                <p>г. Москва, ул. Строителей, 15</p>
+                <ul class="footer-service-interface">
                     <li><a href="#services"> Доставка</a></li>
                     <li><a href="#services"> Гарантия</a></li>
                     <li><a href="#info"> Контакты</a></li>
                 </ul>
-                <p>Тел.: +7(495)495-95-95</p>
+                <p>Тел.: +7 (495) 495-95-95</p>
             </div>
             <div class="footer-bottom">
+               <span class="footer-decor"></span>
                 <ul class="social-buttons">
                     <li>
                         <a href="#" class="social-btn-facebook"><img src="img/facebook.svg" alt="Facebook"></a>
