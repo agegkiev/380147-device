@@ -11,9 +11,9 @@
 <body>
 <header class="page-header">
 
-        <div class="container-header">
+        <div class="container-catalog-header">
 
-            <img src="img/device-logo-header.svg" alt="DEVICE" class="logo-header-hover logo-header">
+            <img src="img/device-logo-header.svg" alt="DEVICE" class="logo-header-hover catalog-logo-header">
             <div class="header-top">
                 <form action="https://echo.htmlacademy.ru" class="search">
                     <div class="search-style">
@@ -36,7 +36,7 @@
             <div class="header-bottom">
                 <ul class="catalog">
                     <li><a href="#" class="catalog-first-item">Каталог товаров </a><img src="img/plus.svg" alt="открыть каталог товаров" class="plus">
-                        <div class="catalog-navigation-hidden">
+                        <div class="catalog2-navigation-hidden">
                             <div class="column">
                                 <ul class="column-1">
                                     <li><a href="#">Виртуальная реальность</a></li>
@@ -68,14 +68,16 @@
 
     </header>
     <main>
-       <div class="wrapper">
+        <section class="page-catalog">
+        <header class="page-catalog-header">
         <h1>Моноподы для селфи</h1>
         <ul class="breadcrumbs" id="breadcrumbs">
-            <li><a href="/index.html">Главная &#62;</a></li>
-            <li><a href="/catalog.html">Каталог &#62;</a></li>
+            <li><a href="/index.html">Главная <img src="/img/nav-arrow.svg" alt=""></a></li>
+            <li><a href="/catalog.html">Каталог товаров <img src="/img/nav-arrow.svg" alt=""></a></li>
             <li><span class="current">Моноподы для селфи</span></li>
         </ul>
-        
+        </header>
+        <div class="wrapper">
             <section class="filter">
                <h2>Фильтр:</h2>
                 <form action="https://echo.htmlacademy.ru">
@@ -184,7 +186,8 @@
                     </ul>
                 </footer>
             </section>
-        </div>
+            </div>
+        </section>
     </main>
 <footer class="page-footer">
         <div class="container-footer">

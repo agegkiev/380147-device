@@ -102,6 +102,17 @@ th {
     position: relative;
 }
 
+.container-catalog-header {
+    display: flex;
+    flex-direction: column;
+    padding: 54px 57px 0 59px;    
+    margin-top: 40px;
+    min-width: 1160px;
+    height: 185px;
+    background-color: #f7e296;
+    position: relative;
+}
+
 .container-footer {
     display: flex;
     position: relative;
@@ -142,8 +153,6 @@ th {
     z-index: 11;
 }
 
-
-
 .header-bottom {
     display: flex;
     justify-content: space-between;
@@ -151,7 +160,6 @@ th {
     letter-spacing: 0.2em;   
     z-index: 11;
 }
-
 
 .user-interface {
     display: flex;
@@ -167,7 +175,6 @@ th {
 .cart {
     margin-right: 3px;    
 }
-
 
 .header-top li:hover,
 .header-top li:hover,
@@ -264,9 +271,10 @@ a.catalog-first-item:active {
     top: -30px;
 }
 
-.catalog:hover .catalog-navigation-hidden {
-    display: flex;
-    background-color: #f7e296;
+.catalog-logo-header {
+    position: absolute;
+    left: 58px;
+    top: -27px;
 }
 
 .header-top ul,
@@ -304,6 +312,7 @@ a.catalog-first-item:active {
 
 .catalog,
 .catalog-navigation-hidden ul,
+.catalog2-navigation-hidden ul,
 .servic-interface,
 .footer-top ul,
 .footer-middle ul,
@@ -334,6 +343,37 @@ a.catalog-first-item:active {
     line-height: 36px;
     letter-spacing: 0.015em;
     z-index: 10;    
+}
+
+.catalog2-navigation-hidden {
+    display: none;
+    font-family: "OpenSans";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;    
+    flex-direction: row;
+    align-content: flex-start;
+    position: absolute;
+    left: 0;
+    bottom: -113px;
+    width: 1160px;
+    height: 167px;
+    padding-left: 60px;
+    padding-top: 41px;
+    text-transform: none;
+    line-height: 36px;
+    letter-spacing: 0.015em;
+    z-index: 10;    
+}
+
+.catalog:hover .catalog-navigation-hidden {
+    display: flex;
+    background-color: #f7e296;
+}
+
+.catalog:hover .catalog2-navigation-hidden {
+    display: flex;
+    background-color: #f7e296;
 }
 
 .slider-col-2 p:first-of-type,
@@ -1253,4 +1293,42 @@ input[type="search"]:focus~input[type="submit"] {
 .slider3-col-1 {
     margin-top: 70px;
     margin-left: 30px;
+}
+
+.page-catalog {
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+}
+
+.page-catalog-header {
+    padding: 4px 0 0 60px;
+    letter-spacing: 0.038em
+}
+
+.page-catalog-header ul {
+    margin-top: -8px;
+    margin-left: -1px
+}
+
+.page-catalog-header li {
+    letter-spacing: 0.13em
+}
+
+.wrapper {
+    display: flex;
+    margin-top: 51px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 330px;    
+}
+
+.filter h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    line-height: 44px;
+    background-color: #666;
 }
