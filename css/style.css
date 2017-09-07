@@ -625,7 +625,6 @@ main h1 {
 }
 
 
-/*
 input[type="search"]::-webkit-input-placeholder {
     color: rgba(0,0,0,.4);
 }
@@ -641,7 +640,6 @@ input[type="search"]::-ms-input-placeholder {
 input[type="search"]::placeholder {
    color: rgba(0,0,0,.4);
 }
-*/
 
 .search-style {
     position: relative;
@@ -1062,7 +1060,8 @@ input[type="search"]:focus~input[type="submit"] {
 
 .container-services {
     display: flex;
-    width: 1160px;    
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .services input[type="radio"] {
