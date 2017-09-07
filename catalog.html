@@ -10,10 +10,8 @@
 
 <body>
 <header class="page-header">
-
-        <div class="container-header">
-
-            <img src="img/device-logo-header.svg" alt="DEVICE" class="logo-header-hover logo-header">
+        <div class="container-catalog-header">
+            <img src="img/device-logo-header.svg" alt="DEVICE" class="logo-header-hover catalog-logo-header">
             <div class="header-top">
                 <form action="https://echo.htmlacademy.ru" class="search">
                     <div class="search-style">
@@ -36,7 +34,7 @@
             <div class="header-bottom">
                 <ul class="catalog">
                     <li><a href="#" class="catalog-first-item">Каталог товаров </a><img src="img/plus.svg" alt="открыть каталог товаров" class="plus">
-                        <div class="catalog-navigation-hidden">
+                        <div class="catalog2-navigation-hidden">
                             <div class="column">
                                 <ul class="column-1">
                                     <li><a href="#">Виртуальная реальность</a></li>
@@ -68,15 +66,21 @@
 
     </header>
     <main>
-       <div class="wrapper">
+        <section class="page-catalog">
+        <header class="page-catalog-header">
         <h1>Моноподы для селфи</h1>
         <ul class="breadcrumbs" id="breadcrumbs">
-            <li><a href="/index.html">Главная &#62;</a></li>
-            <li><a href="/catalog.html">Каталог &#62;</a></li>
+            <li><a href="/index.html">Главная <img src="/img/nav-arrow.svg" alt=""></a></li>
+            <li><a href="/catalog.html">Каталог товаров <img src="/img/nav-arrow.svg" alt=""></a></li>
             <li><span class="current">Моноподы для селфи</span></li>
         </ul>
-        
-            <section class="filter">
+        </header>
+            
+            <div class="container-catalog-main">
+            <div class="left">
+                
+            </div>
+            <section class="filter">              
                <h2>Фильтр:</h2>
                 <form action="https://echo.htmlacademy.ru">
                     <fieldset class="filter-slider">
@@ -108,20 +112,21 @@
                     </fieldset>
                     <input type="submit" class="btn-style" value="Показать">
                 </form>
+                
             </section>
             <section class="goods">
                 <header class="goods-header">
-                    <h3>Сортировка:</h3>
+                    <h2>Сортировка:</h2>
                     <ul>
                         <li><a href="#">По цене</a></li>
                         <li><a href="#">По типу</a></li>
                         <li><a href="#">По популярности</a></li>
-                        <li><a href="#">UP</a></li>
-                        <li><a href="#">DOWN</a></li>
+                        <li><a href="#"><img src="/img/icon-up-dir.svg" alt=""></a></li>
+                        <li><a href="#"><img src="/img/icon-down-dir.svg" alt=""></a></li>
                     </ul>
                 </header>
                 <div class="grid-of-goods">
-                    <div class="item">
+                    <div class="item item1">
                         <img src="img/item-1.jpg" alt="Любительская селфи-палка">
                         <div class="menu-hover">
                             <ul>
@@ -134,7 +139,7 @@
                             <span>500 руб.</span>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item item2">
                         <img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
                         <div class="menu-hover">
                             <ul>
@@ -144,10 +149,10 @@
                         </div>
                         <div>
                             <p><a href="#">Профессиональная селфи-палка</a></p>
-                            <span>1500 руб.</span>
+                            <span>1 500 руб.</span>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item item3">
                         <img src="img/item-3.jpg" alt="непотопляемая селфи-палка">
                         <div class="menu-hover">
                             <ul>
@@ -157,10 +162,10 @@
                         </div>
                         <div>
                             <p><a href="#">Непотопляемая селфи-палка</a></p>
-                            <span>2500 руб.</span>
+                            <span>2 500 руб.</span>
                         </div>
                     </div>
-                    <div class="item grid-item--new">
+                    <div class="item item4 grid-item--new">
                         <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
                         <div class="menu-hover">
                             <ul>
@@ -169,8 +174,8 @@
                             </ul>
                         </div>
                         <div>
-                            <p><a href="#">Селфи-палка "Следуй за мной"</a></p>
-                            <span>4900 руб.</span>
+                            <p><a href="#">Селфи-палка &#171Следуй за мной&#187</a></p>
+                            <span>4 900 руб.</span>
                         </div>
                     </div>
                 </div>
@@ -184,7 +189,13 @@
                     </ul>
                 </footer>
             </section>
-        </div>
+            <div class="right">
+                
+            </div>
+            </div>
+            
+        </section>
+         
     </main>
 <footer class="page-footer">
         <div class="container-footer">
