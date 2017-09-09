@@ -122,6 +122,24 @@ th {
     padding: 70px 0 47px;
 }
 
+.catalog-container-footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 1160px;
+    height: 335px;
+    padding: 75px 0 50px;
+}
+
+.catalog-container-footer .footer-bottom {
+    height: 74px;
+}
+
+.catalog-container-footer .footer-middle p {
+    padding-bottom: 2px;
+}
+
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -713,11 +731,11 @@ main h1 {
     top: 55px;
 }
 
-.logo-footer:hover {
+.catalog-container-footer .logo-footer:hover {
     opacity: 0.6;
 }
 
-.logo-footer:active {
+.catalog-container-footer .logo-footer:active {
     opacity: 0.3;
 }
 
@@ -732,22 +750,49 @@ main h1 {
     width: 299px;
 }
 
-.user-footer::before {
-    content: url(/img/user.svg);
+.user-footer svg {
     position: absolute;
-    left: -26px;
+    left: -25px;
+    top: 2px;
 }
 
-.compare-footer::before {
-    content: url(/img/compare.svg);
+.compare-footer svg {
     position: absolute;
     left: 87px;
+    top: 4px;
 }
 
-.cart-footer::before {
-    content: url(/img/cart.svg);
+.cart-footer svg {
     position: absolute;
     right: 70px;
+    top: 2px;
+}
+
+.user-footer span,
+.compare-footer span,
+.cart-footer span {
+    opacity: 0.7;
+}
+
+.user-footer:hover svg,
+.compare-footer:hover svg,
+.cart-footer:hover svg{
+    opacity: 0.6;
+}
+
+.user-footer:hover span,
+.compare-footer:hover span,
+.cart-footer:hover span{
+    opacity: 1;
+}
+
+.user-footer:active svg,
+.compare-footer:active svg,
+.cart-footer:active svg,
+.user-footer:active span,
+.compare-footer:active span,
+.cart-footer:active span{
+    opacity: 0.3;
 }
 
 .footer-middle {
@@ -755,6 +800,12 @@ main h1 {
     justify-content: space-between;
     align-items: center;
 }
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .footer-bottom {
     display: flex;
@@ -845,9 +896,14 @@ main h1 {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 2px 0px #050505;
     margin: 0 10px;
     cursor: pointer;
+    border-color: #050505;
+    background-image: url("/img/slider-button-empty.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .slider-controls {
@@ -860,7 +916,9 @@ main h1 {
 #btn-1:checked~.slider-controls label[for="btn-1"],
 #btn-2:checked~.slider-controls label[for="btn-2"],
 #btn-3:checked~.slider-controls label[for="btn-3"] {
-    background-color: #666666;
+    background-image: url(/img/slider-button.svg);
+    background-position: 50% 50%;
+    background-size: 10px;
 }
 
 #btn-1:checked~.slider-inner .slider-sliders {
@@ -886,7 +944,6 @@ main h1 {
     padding-left: 20.5px;
     background-image: linear-gradient(black 0%, black 100%);
     color: white;
-    transition: 0.5s;
 }
 
 #btn-4:checked~.services-slider-inner .services-slider-sliders {
@@ -966,6 +1023,7 @@ main h1 {
 .popular-item {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 160px;
     height: 160px;
     background-color: #f7e296;
@@ -1012,7 +1070,7 @@ main h1 {
     opacity: 0.3;
 }
 
-.popular-item-2+h3 {
+.popular-item-2 + h3 {
     width: 117px;
     letter-spacing: 0.023em;
 }
@@ -1558,4 +1616,201 @@ main h1 {
 
 .menu-hover {
     display: none;
+}
+
+.filter-color-selection,
+.filter-slider,
+.filter-bluetooth-selection,
+.filter input[type="submit"] {
+    margin-left: 49px;
+    width: 200px;
+}
+
+.filter-slider {
+    border: none;    
+    height: 140px;
+    position: relative;
+    margin-top: 70px;
+}
+
+.filter-slider legend,
+.filter-color-selection legend,
+.filter-bluetooth-selection legend {
+    border-top: 2px solid;
+    width: 200px;    
+    padding-top: 12px;
+    letter-spacing: 0.2px;
+}
+
+.filter-price-slider p {
+    display: flex;
+    justify-content: space-between;
+    width: 145px;
+    margin-top: 50px;
+}
+
+.filter-price-slider div:first-child {
+    position: absolute;
+    top: 61px;
+    left: 5px;
+    z-index: 1
+}
+
+.filter-price-slider div:nth-of-type(3) {
+    position: absolute;
+    top: 61px;
+    left: 118px;
+}
+
+.filter-price-slider div:nth-of-type(2) {
+    position: absolute;
+    bottom: 68px;
+    background-image: linear-gradient(90deg, #91c92f 120px, #dbdbdb 120px);
+    width: 200px;
+    height: 2px;    
+}
+
+.filter-color-selection,
+.filter-bluetooth-selection {
+    border: none;    
+}
+
+.filter-color-selection-list,
+.filter-bluetooth-selection ul{
+    list-style: none;
+}
+
+
+
+.filter-color-selection-list {
+    width: 200px;
+    height: 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 27px;
+    position: relative;
+    margin-bottom: 34px;
+}
+
+.filter-color-selection-list label {
+    cursor: pointer;
+}
+
+.filter-color-item1::before {
+    content: url("/img/checkbox-off.svg");
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+.filter-color-item2::before {
+    content: url("/img/checkbox-off.svg");
+    position: absolute;
+    left: 0;
+    top: 36px;
+}
+
+.filter-color-item3::before {
+    content: url("/img/checkbox-off.svg");
+    position: absolute;
+    left: 0;
+    top: 76px;
+}
+
+.filter-color-item4::before {
+    content: url("/img/checkbox-off.svg");
+    position: absolute;
+    left: 0;
+    top: 115px;
+}
+
+.filter-color-item5::before {
+    content: url("/img/checkbox-off.svg");
+    position: absolute;
+    left: 0;
+    top: 156px;
+}
+
+#black:checked + label::after{
+    content: url("/img/checkbox-on.svg");
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+#white:checked + label::after{
+    content: url("/img/checkbox-on.svg");
+    position: absolute;
+    left: 0;
+    top: 36px;
+}
+
+#blue:checked + label::after{
+    content: url("/img/checkbox-on.svg");
+    position: absolute;
+    left: 0;
+    top: 76px;
+}
+
+#red:checked + label::after{
+    content: url("/img/checkbox-on.svg");
+    position: absolute;
+    left: 0;
+    top: 115px;
+}
+
+#pink:checked + label::after{
+    content: url("/img/checkbox-on.svg");
+    position: absolute;
+    left: 0;
+    top: 156px;
+}
+
+.filter-bluetooth-selection-list {
+    margin-top: 20px;
+    padding-top: 8px;
+    height: 63px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.filter-bluetooth-selection-list label {
+    cursor: pointer;
+}
+
+.filter-bluetooth-item1::before {
+    content: url("/img/radio-off.svg");
+    position: absolute;
+    left: -1px;
+    top: 0;
+}
+
+.filter-bluetooth-item2::before {
+    content: url("/img/radio-off.svg");
+    position: absolute;
+    left: -1px;
+    top: 42px;
+}
+
+#yes:checked + label::after {
+    content: url(/img/radio-on.svg);
+    position: absolute;
+    left: -1px;
+    top: 0;
+}
+
+#no:checked + label::after {
+    content: url(/img/radio-on.svg);
+    position: absolute;
+    left: -1px;
+    top: 42px;
+}
+
+.filter-bluetooth-selection + input[type="submit"] {
+    border: none;
+    background-color: inherit;
 }
