@@ -1504,7 +1504,7 @@ main h1 {
 
 .right {
     width: 100%;
-    background-image: linear-gradient(#efefef 70px, transparent 70px, #efefef 100%, transparent 100%);
+    background-image: linear-gradient(#efefef 70px, transparent 70px, transparent 100%, transparent 100%);
 }
 
 .goods {
