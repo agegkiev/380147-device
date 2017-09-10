@@ -70,9 +70,9 @@
             <h2 class="visually-hidden">
                 Выбор магазина
             </h2>
-            <input type="radio" id="btn-1" name="toggle" checked>
-            <input type="radio" id="btn-2" name="toggle">
-            <input type="radio" id="btn-3" name="toggle">
+            <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+            <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
             <div class="slider-controls">
                 <label for="btn-1"></label>
                 <label for="btn-2"></label>
@@ -213,9 +213,9 @@
                 <h2 class="visually-hidden">
                     Сервис
                 </h2>
-                <input type="radio" id="btn-4" name="toggle" checked>
-                <input type="radio" id="btn-5" name="toggle">
-                <input type="radio" id="btn-6" name="toggle">
+                <input class="visually-hidden" type="radio" id="btn-4" name="toggle-services" checked>
+                <input class="visually-hidden" type="radio" id="btn-5" name="toggle-services">
+                <input class="visually-hidden" type="radio" id="btn-6" name="toggle-services">
                 <div class="services-slider-controls">
                     <label for="btn-4" class="btn-style btn-label">Доставка</label>
                     <label for="btn-5" class="btn-style btn-label">Гарантия</label>
@@ -289,7 +289,7 @@
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете</p>
                 <p>проверить работоспособность покупки. Всякое бывает.</p>
-                <img src="img/map.jpg.png" alt="Найти нас">
+                <a href="#"><img src="img/map.jpg.png" alt="Найти нас"></a>
                 <a href="#" class="btn-style"><span>Напишите нам</span></a>
             </section>
         </div>
@@ -344,20 +344,24 @@
             <div>
                 <label class="write-us-item">
                     Ваше имя:
-                    <input type="text" placeholder="Представьтесь, пожалуйста">
+                    <input type="text" placeholder="Представьтесь, пожалуйста" required>
                 </label>
                 <label>
                     Ваш e-mail:
-                    <input type="email" placeholder="Для отправки ответа">
+                    <input type="email" placeholder="Для отправки ответа" required>
                 </label>
             </div>
                 <label>
                     Текст письма:
-                    <textarea name="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                    <textarea name="" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
                 </label>
             <input type="submit" class="btn-style">
         </form>
         <a href="#" class="modal-close"><img src="img/modal-close.svg" alt=""></a>        
+    </div>
+    <div class="map">
+        <img src="/img/map-big.jpg" alt="">
+        <a href="#" class="modal-close"><img src="img/modal-close.svg" alt=""></a> 
     </div>
     
 </body>
