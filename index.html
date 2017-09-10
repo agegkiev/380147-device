@@ -10,12 +10,10 @@
 
 <body>
     <header class="page-header">
-
         <div class="container-header">
-
             <img src="img/device-logo-header.svg" alt="DEVICE" class="logo-header">
             <div class="header-top">
-                <form action="https://echo.htmlacademy.ru" class="search">
+                <form action="https://echo.htmlacademy.ru" class="search" name="search">
                     <div class="search-style">
                         <input type="search" placeholder="Поиск по сайту">
                         <input type="submit" value="Найти" class="button-hover">
@@ -303,8 +301,7 @@
                 <img src="img/device-logo-footer.svg" alt="DEVICE" class="logo-footer">
                 <ul class="footer-user-interface">
                     <li>
-                        <a href="#" class="user-footer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#ffc600" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg><span>Войти</span></a>
+                        <a href="#" class="user-footer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#ffc600" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg><span>Войти</span></a>
                     </li>
                     <li>
                         <a href="#" class="compare-footer"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path fill="#ffc600" d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg><span>Сравнить</span></a>
@@ -342,7 +339,27 @@
             </div>
         </div>
     </footer>
-
+    <div class="write-us">
+        <form action="https://echo.htmlacademy.ru" name="write-us">
+            <div>
+                <label class="write-us-item">
+                    Ваше имя:
+                    <input type="text" placeholder="Представьтесь, пожалуйста">
+                </label>
+                <label>
+                    Ваш e-mail:
+                    <input type="email" placeholder="Для отправки ответа">
+                </label>
+            </div>
+                <label>
+                    Текст письма:
+                    <textarea name="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                </label>
+            <input type="submit" class="btn-style">
+        </form>
+        <a href="#" class="modal-close"><img src="img/modal-close.svg" alt=""></a>        
+    </div>
+    
 </body>
 
 </html>
