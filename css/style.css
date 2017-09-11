@@ -1977,6 +1977,14 @@ main h1 {
     display: none;
 }
 
+.write-us-show {
+    display: block;
+}
+
+.write-us-close {
+    display: none;
+}
+
 .write-us input[placeholder],
 .write-us textarea {
     font-family: "OpenSans";
@@ -2040,18 +2048,21 @@ main h1 {
     border: none;
 }
 
-.modal-close {
+.modal-close,
+.modal-close-map {
     position: absolute;
     right: 22px;
     top: 22px;
     opacity: 0.5;
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close-map:hover {
     opacity: 1;
 }
 
-.modal-close:active {
+.modal-close:active,
+.modal-close-map:active {
     opacity: 0.3;
 }
 
@@ -2066,3 +2077,8 @@ main h1 {
     z-index: 100;
     display: none;
 }
+
+.map-show {
+    display: block;
+}
+

@@ -289,8 +289,8 @@
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете</p>
                 <p>проверить работоспособность покупки. Всякое бывает.</p>
-                <a href="#"><img src="img/map.jpg.png" alt="Найти нас"></a>
-                <a href="#" class="btn-style"><span>Напишите нам</span></a>
+                <a href="#"><img class="map-mini" src="img/map.jpg.png" alt="Найти нас"></a>
+                <a href="#" class="btn-style btn-write-us"><span>Напишите нам</span></a>
             </section>
         </div>
     </main>
@@ -344,26 +344,55 @@
             <div>
                 <label class="write-us-item">
                     Ваше имя:
-                    <input type="text" placeholder="Представьтесь, пожалуйста" required>
+                    <input type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
                 </label>
                 <label>
                     Ваш e-mail:
                     <input type="email" placeholder="Для отправки ответа" required>
                 </label>
             </div>
-                <label>
+            <label>
                     Текст письма:
                     <textarea name="" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
                 </label>
             <input type="submit" class="btn-style">
         </form>
-        <a href="#" class="modal-close"><img src="img/modal-close.svg" alt=""></a>        
+        <a href="#" class="modal-close"><img src="img/modal-close.svg" alt=""></a>
     </div>
     <div class="map">
-        <img src="/img/map-big.jpg" alt="">
-        <a href="#" class="modal-close"><img src="img/modal-close.svg" alt=""></a> 
+        <a href="#" class="map-btn"><img src="/img/map-big.jpg" alt=""></a>
+        <a href="#" class="modal-close-map"><img src="img/modal-close.svg" alt=""></a>
     </div>
-    
+    <script>
+        var link = document.querySelector(".btn-write-us");
+        var popup = document.querySelector(".write-us");
+        var close = popup.querySelector(".modal-close");
+        
+        var mapbtn = document.querySelector(".map-mini");
+        var popupmap = document.querySelector(".map");
+        var closemap = popupmap.querySelector(".modal-close-map");
+        
+        link.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.add("write-us-show");
+        });
+
+        close.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.remove("write-us-show");
+        });
+        
+        mapbtn.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popupmap.classList.add("map-show");
+        });
+        
+        closemap.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popupmap.classList.remove("map-show");
+        });
+        
+    </script>
 </body>
 
 </html>
