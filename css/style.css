@@ -677,6 +677,7 @@ main h1 {
     font-size: 18px;
     max-width: 290px;
     display: inline-block;
+    word-wrap: break-word;
 }
 
 .menu-hover li:last-child {
@@ -1514,12 +1515,12 @@ main h1 {
 
 .left {
     width: 100%;
-    background-image: linear-gradient(#dcdcdc 70px, #efefef 70px, #efefef 100%, #efefef 100%);
+    background-image: linear-gradient(#dcdcdc 0px, #dcdcdc 70px, #efefef 70px, #efefef 100%);
 }
 
 .right {
     width: 100%;
-    background-image: linear-gradient(#efefef 70px, transparent 70px, transparent 100%, transparent 100%);
+    background-image: linear-gradient(#efefef 0, #efefef 70px, transparent 70px, transparent 100%);
 }
 
 .goods {
@@ -1995,7 +1996,7 @@ main h1 {
     display: flex;
     flex-direction: column;
     box-shadow: 5px 1px 50px rgba(0, 0, 0, 0.3);
-    display: none;
+    display: block;
 }
 
 .write-us-show {
@@ -2004,6 +2005,10 @@ main h1 {
 
 .write-us-close {
     display: none;
+}
+
+.write-us input {
+    
 }
 
 .write-us input[placeholder],
@@ -2016,7 +2021,7 @@ main h1 {
 
 .write-us input[placeholder]:hover,
 .write-us textarea:hover {
-    opacity: 1;
+    opacity: 0.4;
 }
 
 .write-us input[placeholder]:active,
