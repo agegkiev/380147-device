@@ -271,7 +271,7 @@ a.catalog-first-item:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -331,7 +331,7 @@ a.catalog-first-item:active {
 
 .header-bottom,
 .footer-middle:not(p) {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -405,7 +405,7 @@ a.catalog-first-item:active {
 
 .slider-col-2 p:first-of-type,
 .slider-col-2 p:nth-of-type(2) {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 47px;
@@ -446,7 +446,7 @@ a.catalog-first-item:active {
 }
 
 .slider-number {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 179.2px;
@@ -479,7 +479,7 @@ a.catalog-first-item:active {
 }
 
 .slide-1-table th {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 36px;
@@ -526,14 +526,14 @@ a.catalog-first-item:active {
 
 .popular li {
     display: inline-block;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
 }
 
 .services-slider-controls {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -541,7 +541,7 @@ a.catalog-first-item:active {
 
 .services-slider h2,
 .info h2 {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 47px;
@@ -562,7 +562,7 @@ a.catalog-first-item:active {
 
 .info li {
     list-style: none;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -603,7 +603,7 @@ main h1 {
 
 .filter legend {
     list-style: none;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -622,7 +622,7 @@ main h1 {
 
 .goods-header h3,
 .goods-footer ul {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 16px;
@@ -671,7 +671,7 @@ main h1 {
 }
 
 .item p {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -1503,7 +1503,7 @@ main h1 {
 .container-catalog-main {
     display: flex;
     min-width: 1160px;
-    margin-top: 50px;
+    margin-top: 50px;    
 }
 
 .filter {
@@ -1934,7 +1934,7 @@ main h1 {
     align-items: center;
     width: 120px;
     height: 70px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 16px;
@@ -1989,7 +1989,7 @@ main h1 {
     padding: 100px;
     background-color: #ffffff;
     z-index: 100;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -2108,3 +2108,23 @@ main h1 {
     display: block;
 }
 
+main{
+ overflow: hidden;
+}
+.container-catalog-main{
+ position: relative;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 1160px;
+}
+.left, .right{
+ position: absolute;
+ height: 100%;
+ top: 0;
+}
+.left{
+ right: 100%;
+}
+.right{
+ left: 100%;
+}

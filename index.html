@@ -11,7 +11,7 @@
 <body>
     <header class="page-header">
         <div class="container-header">
-            <img src="img/device-logo-header.svg" alt="DEVICE" class="logo-header">
+            <img src="/img/device-logo-header.svg" alt="DEVICE" class="logo-header">
             <div class="header-top">
                 <form action="https://echo.htmlacademy.ru" class="search" name="search">
                     <div class="search-style">
@@ -364,35 +364,7 @@
         <a href="#" class="map-btn"><img src="img/map-big.jpg" alt=""></a>
         <a href="#" class="modal-close-map"><img src="img/modal-close.svg" alt=""></a>
     </div>
-    <script>
-        var link = document.querySelector(".btn-write-us");
-        var popup = document.querySelector(".write-us");
-        var close = popup.querySelector(".modal-close");
-        
-        var mapbtn = document.querySelector(".map-mini");
-        var popupmap = document.querySelector(".map");
-        var closemap = popupmap.querySelector(".modal-close-map");
-        
-        link.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup.classList.add("write-us-show");
-        });
-
-        close.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup.classList.remove("write-us-show");
-        });
-        
-        mapbtn.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popupmap.classList.add("map-show");
-        });
-        
-        closemap.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popupmap.classList.remove("map-show");
-        });
-        
+    <script src="../js/script.js">        
     </script>
 </body>
 
