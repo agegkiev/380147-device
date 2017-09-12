@@ -1999,8 +1999,10 @@ main h1 {
 .write-us {
     position: fixed;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+/*    top: 50%;*/
+    top: 100px;
+    margin-left: -450px;
+/*    transform: translate(-50%, -50%);*/    
     width: 960px;
     height: 580px;
     padding: 100px;
@@ -2018,6 +2020,7 @@ main h1 {
 
 .write-us-show {
     display: block;
+    animation: bounce 0.6s;
 }
 
 .write-us-close {
@@ -2144,4 +2147,22 @@ main h1 {
 
 .right{
  left: 100%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2300px);    
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
