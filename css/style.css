@@ -88,6 +88,7 @@ th {
     justify-content: space-around;
     min-width: 1160px;
     background-color: #6a6a6a;
+    overflow: hidden;
 }
 
 .container-header {
@@ -174,7 +175,6 @@ th {
     justify-content: space-between;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    z-index: 11;
 }
 
 .user-interface {
@@ -320,6 +320,7 @@ a.catalog-first-item:active {
 .footer-top li,
 .servic-interface li {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .header-top input {
@@ -369,7 +370,7 @@ a.catalog-first-item:active {
     text-transform: none;
     line-height: 36px;
     letter-spacing: 0.015em;
-    z-index: 10;
+    
 }
 
 .catalog2-navigation-hidden {
@@ -390,17 +391,18 @@ a.catalog-first-item:active {
     text-transform: none;
     line-height: 36px;
     letter-spacing: 0.015em;
-    z-index: 10;
 }
 
 .catalog:hover .catalog-navigation-hidden {
     display: flex;
     background-color: #f7e296;
+    z-index: 2;
 }
 
 .catalog:hover .catalog2-navigation-hidden {
     display: flex;
     background-color: #f7e296;
+    z-index: 2;
 }
 
 .slider-col-2 p:first-of-type,
@@ -526,6 +528,7 @@ a.catalog-first-item:active {
 
 .popular li {
     display: inline-block;
+    vertical-align: middle;
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -558,6 +561,7 @@ a.catalog-first-item:active {
 
 .footer-middle li {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .info li {
@@ -580,6 +584,7 @@ a.catalog-first-item:active {
 
 .breadcrumbs li {
     display: inline-block;
+    vertical-align: middle;
     color: rgba(0, 0, 0, .3);
 }
 
@@ -641,6 +646,7 @@ main h1 {
 .goods-header li,
 .goods-footer li {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .goods-header-list a {
@@ -677,6 +683,7 @@ main h1 {
     font-size: 18px;
     max-width: 290px;
     display: inline-block;
+    vertical-align: middle;
     word-wrap: break-word;
 }
 
@@ -742,6 +749,7 @@ main h1 {
 
 .search-style input[type="search"] {
     display: inline-block;
+    vertical-align: middle;
     width: 358px;
     height: 50px;
     position: relative;
@@ -774,6 +782,7 @@ main h1 {
 .search-style input[type="search"]:focus~input[type="submit"],
 .search-style input[type="submit"]:active {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .logo-footer {
@@ -951,6 +960,7 @@ main h1 {
 
 .slider-controls label {
     display: inline-block;
+    vertical-align: middle;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -1029,6 +1039,7 @@ main h1 {
     width: 1160px;
     min-height: 486px;
     margin-top: -111px;
+    
 }
 
 .slider {
@@ -1075,7 +1086,7 @@ main h1 {
     justify-content: space-around;
     width: 1160px;
     min-height: 287px;
-    margin-top: 90px;
+    margin-top: 86px;
 }
 
 .popular-item {
@@ -1211,6 +1222,7 @@ main h1 {
 .container-services {
     display: flex;
     width: 1160px;
+    height: 288px;
     margin: 0 auto;
 }
 
@@ -1238,6 +1250,7 @@ main h1 {
     width: 876px;
     min-height: 319px;
     display: inline-block;
+    vertical-align: middle;
     float: left;
     position: relative;
     z-index: 1;
@@ -1591,6 +1604,7 @@ main h1 {
 
 .grid-of-goods .item:first-child {
     margin-left: 74px;
+    margin-bottom: 34px;
 }
 
 .grid-of-goods .item:nth-child(2) {
@@ -1687,10 +1701,6 @@ main h1 {
 
 .menu-hover ul {
     list-style: none;
-}
-
-.menu-hover li:first-of-type {
-    letter-spacing: 0.em;
 }
 
 .filter-color-selection,
@@ -1996,7 +2006,7 @@ main h1 {
     display: flex;
     flex-direction: column;
     box-shadow: 5px 1px 50px rgba(0, 0, 0, 0.3);
-    display: block;
+    display: none;
 }
 
 .write-us-show {
@@ -2005,10 +2015,6 @@ main h1 {
 
 .write-us-close {
     display: none;
-}
-
-.write-us input {
-    
 }
 
 .write-us input[placeholder],
@@ -2108,23 +2114,27 @@ main h1 {
     display: block;
 }
 
-main{
+.main-catalog {
  overflow: hidden;
 }
+
 .container-catalog-main{
  position: relative;
  margin-left: auto;
  margin-right: auto;
  max-width: 1160px;
 }
+
 .left, .right{
  position: absolute;
  height: 100%;
  top: 0;
 }
+
 .left{
  right: 100%;
 }
+
 .right{
  left: 100%;
 }
