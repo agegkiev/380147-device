@@ -296,8 +296,8 @@ a.catalog-first-item:active {
 
 .logo-header {
     position: absolute;
-    left: 58px;
-    top: -30px;
+    left: 57px;
+    top: -28px;
 }
 
 .catalog-logo-header {
@@ -455,7 +455,7 @@ a.catalog-first-item:active {
     color: #ffffff;
     position: absolute;
     right: 49px;
-    top: -26px;
+    top: -28px;
 }
 
 .promo-sliders,
@@ -1381,18 +1381,25 @@ main h1 {
 }
 
 .about-us p:first-of-type {
+    width: 430px;
     line-height: 30px;
     letter-spacing: 0.1px;
+    padding-top: 2px;
 }
 
 .about-us p:nth-of-type(2) {
-    margin-top: 32px;
-    line-height: 30px;
-    letter-spacing: 0.1px;
+    margin-top: 37px;
+    margin-bottom: 10px;
+    letter-spacing: -0.18px;
+}
+
+.about-us p:nth-of-type(3) {
+    margin-top: 13px;
+    letter-spacing: -0.18px;
 }
 
 .about-us ul:first-of-type {
-    margin-top: 65px;
+    margin-top: 72px;
     padding-left: 35px;
 }
 
@@ -1412,7 +1419,7 @@ main h1 {
 }
 
 .contacts h2 {
-    margin-bottom: 47px;
+    margin-bottom: 48px;
 }
 
 .contacts p:first-of-type {
