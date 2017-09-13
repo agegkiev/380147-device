@@ -2199,3 +2199,9 @@ main h1 {
     transform: translateX(10px);
   }
 }
+
+.write-us input.invalid-input,
+.write-us textarea.invalid-input {
+    background-color: #f6dada;
+    border: none;
+}
