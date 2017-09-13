@@ -1118,25 +1118,33 @@ main h1 {
     letter-spacing: 0.03em;
 }
 
-.popular-item1-hover:hover .popular-item-1 {
+.popular-item1-hover:hover .popular-item-1,
+.popular-item2-hover:hover .popular-item-2,
+.popular-item3-hover:hover .popular-item-3,
+.popular-item4-hover:hover .popular-item-4,
+.popular-item5-hover:hover .popular-item-5,
+.popular-item6-hover:hover .popular-item-6 {
     background-color: #f0c52e;
 }
 
-.popular-item1-hover:active img {
+.popular-item1-hover:active img,
+.popular-item1-hover:active  h3,
+.popular-item2-hover:active img,
+.popular-item2-hover:active  h3,
+.popular-item3-hover:active img,
+.popular-item3-hover:active  h3,
+.popular-item4-hover:active img,
+.popular-item4-hover:active  h3,
+.popular-item5-hover:active img,
+.popular-item5-hover:active  h3,
+.popular-item6-hover:active img,
+.popular-item6-hover:active  h3 {
     opacity: 0.3;
 }
 
 .popular-item-2 img {
     margin-bottom: -39px;
     margin-left: 3px;
-}
-
-.popular-item2-hover:hover .popular-item-2 {
-    background-color: #f0c52e;
-}
-
-.popular-item2-hover:active img {
-    opacity: 0.3;
 }
 
 .popular-item-2+h3 {
@@ -1149,14 +1157,6 @@ main h1 {
     margin-top: 3px;
 }
 
-.popular-item3-hover:hover .popular-item-3 {
-    background-color: #f0c52e;
-}
-
-.popular-item3-hover:active img {
-    opacity: 0.3;
-}
-
 .popular-item-3+h3 {
     letter-spacing: 0.01em;
 }
@@ -1164,14 +1164,6 @@ main h1 {
 .popular-item-4 img {
     margin-top: 5px;
     margin-left: 4px;
-}
-
-.popular-item4-hover:hover .popular-item-4 {
-    background-color: #f0c52e;
-}
-
-.popular-item4-hover:active img {
-    opacity: 0.3;
 }
 
 .popular-item-4+h3 {
@@ -1184,14 +1176,6 @@ main h1 {
     margin-top: 3px;
 }
 
-.popular-item5-hover:hover .popular-item-5 {
-    background-color: #f0c52e;
-}
-
-.popular-item5-hover:active img {
-    opacity: 0.3;
-}
-
 .popular-item-5+h3 {
     letter-spacing: 0.21px;
 }
@@ -1199,14 +1183,6 @@ main h1 {
 .popular-item-6 img {
     margin-top: 7px;
     margin-right: 1px;
-}
-
-.popular-item6-hover:hover .popular-item-6 {
-    background-color: #f0c52e;
-}
-
-.popular-item6-hover:active img {
-    opacity: 0.3;
 }
 
 .popular-item-6+h3 {
