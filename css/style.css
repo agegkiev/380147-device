@@ -1799,35 +1799,35 @@ main h1 {
     z-index: 1;
 }
 
-#black:checked+label::after {
+.black:checked+label::after {
     content: url("../img/checkbox-on.svg");
     position: absolute;
     left: 0;
     top: -4px;
 }
 
-#white:checked+label::after {
+.white:checked+label::after {
     content: url("../img/checkbox-on.svg");
     position: absolute;
     left: 0;
     top: 36px;
 }
 
-#blue:checked+label::after {
+.blue:checked+label::after {
     content: url("../img/checkbox-on.svg");
     position: absolute;
     left: 0;
     top: 76px;
 }
 
-#red:checked+label::after {
+.red:checked+label::after {
     content: url("../img/checkbox-on.svg");
     position: absolute;
     left: 0;
     top: 115px;
 }
 
-#pink:checked+label::after {
+.pink:checked+label::after {
     content: url("../img/checkbox-on.svg");
     position: absolute;
     left: 0;
@@ -1863,14 +1863,14 @@ main h1 {
     top: 42px;
 }
 
-#yes:checked+label::after {
+.yes:checked+label::after {
     content: url("../img/radio-on.svg");
     position: absolute;
     left: -1px;
     top: 0;
 }
 
-#no:checked+label::after {
+.no:checked+label::after {
     content: url("../img/radio-on.svg");
     position: absolute;
     left: -1px;
