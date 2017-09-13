@@ -2,8 +2,6 @@ var link = document.querySelector(".btn-write-us");
 var popup = document.querySelector(".write-us");
 var close = popup.querySelector(".modal-close");
 
-var valid = popup.querySelector(".write-us-item-valid")
-
 var maplink = document.querySelector(".map-mini");
 var popupmap = document.querySelector(".map");
 var closemap = popupmap.querySelector(".modal-close-map");
