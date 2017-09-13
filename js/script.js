@@ -2,6 +2,8 @@ var link = document.querySelector(".btn-write-us");
 var popup = document.querySelector(".write-us");
 var close = popup.querySelector(".modal-close");
 
+var valid = popup.querySelector(".write-us-item-valid")
+
 var maplink = document.querySelector(".map-mini");
 var popupmap = document.querySelector(".map");
 var closemap = popupmap.querySelector(".modal-close-map");
@@ -34,16 +36,26 @@ closemap.addEventListener("click", function (evt) {
     popupmap.classList.remove("map-show");
 });
 
-form.addEventListener("submit", function (evt) {
-    evt.preventDefault() 
-    {
-        if (!login.value || !email.value) 
-    {
-      evt.preventDefault();
-      popup.classList.add("modal-error");
-    }
-    }
-  });
+form.addEventListener("submit", function (evt){
+ if (!login.value || !email.value) {
+  evt.preventDefault();
+  popup.classList.remove("modal-error");
+  popup.offsetWidth = popup.offsetWidth;
+  popup.classList.add("modal-error");
+  login.classList.remove("invalid-input")
+  email.classList.remove("invalid-input")
+  if(!login.value){
+   login.classList.add("invalid-input");
+  }
+  if(!email.value) {
+   email.classList.add("invalid-input");
+  }
+ }else {
+  login.classList.remove("invalid-input")
+  email.classList.remove("invalid-input")
+  form.submit();
+ }
+});
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {

@@ -2035,6 +2035,10 @@ main h1 {
     font-size: 14px;
 }
 
+.invalid-input {
+    background-color: red;
+}
+
 .write-us input[placeholder]:hover,
 .write-us textarea:hover {
     opacity: 0.4;
