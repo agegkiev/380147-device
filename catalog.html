@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
     <header class="page-header">
         <div class="container-catalog-header">
-            <img src="img/device-logo-header.svg" alt="DEVICE" class="logo-header-hover catalog-logo-header">
+            <a href="index.html"><img src="img/device-logo-header.png" alt="DEVICE" class="logo-header-hover catalog-logo-header"></a>
             <div class="header-top">
                 <form action="https://echo.htmlacademy.ru" class="search">
                     <div class="search-style">
@@ -66,7 +66,7 @@
         </div>
 
     </header>
-    <main>
+    <main class="main-catalog">
         <section class="page-catalog">
             <header class="page-catalog-header">
                 <h1>Моноподы для селфи</h1>
@@ -145,6 +145,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                                         <path class="icon-down" fill="#231F20" d="M5.5 10L0 0h11"/>
                                     </svg>
+                                    <span class="visually-hidden">Сортировать по убыванию</span>
                                 </a>
                             </li>
                             <li>
@@ -152,13 +153,14 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                                         <path class="icon-up" fill="#231F20" d="M5.5 0L0 10h11z"/>
                                     </svg>
+                                    <span class="visually-hidden">Сортировать по возрастанию</span>
                                 </a>
                             </li>
                         </ul>
                     </header>
                     <div class="grid-of-goods">
                         <div class="item item1">
-                            <img src="img/item-1.jpg" alt="Любительская селфи-палка">
+                            <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
                             <div class="menu-hover">
                                 <ul>
                                     <li><a href="#" class="btn-style"><span>В корзину</span></a></li>
@@ -171,7 +173,7 @@
                             </div>
                         </div>
                         <div class="item item2">
-                            <img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
+                            <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
                             <div class="menu-hover">
                                 <ul>
                                     <li><a href="#" class="btn-style"><span>В корзину</span></a></li>
@@ -184,7 +186,7 @@
                             </div>
                         </div>
                         <div class="item item3">
-                            <img src="img/item-3.jpg" alt="непотопляемая селфи-палка">
+                            <img src="img/item-3.jpg" alt="непотопляемая селфи-палка" width="360" height="380">
                             <div class="menu-hover">
                                 <ul>
                                     <li><a href="#" class="btn-style"><span>В корзину</span></a></li>
@@ -197,7 +199,7 @@
                             </div>
                         </div>
                         <div class="item item4 grid-item--new">
-                            <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
+                            <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
                             <div class="menu-hover">
                                 <ul>
                                     <li><a href="#" class="btn-style"><span>В корзину</span></a></li>
@@ -228,7 +230,7 @@
     <footer class="page-footer">
         <div class="catalog-container-footer">
             <div class="footer-top">
-                <img src="img/device-logo-footer.svg" alt="DEVICE" class="logo-footer">
+                <img src="img/device-logo-footer.png" alt="DEVICE" class="logo-footer">
                 <ul class="footer-user-interface">
                     <li>
                         <a href="#" class="user-footer">

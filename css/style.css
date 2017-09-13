@@ -88,6 +88,7 @@ th {
     justify-content: space-around;
     min-width: 1160px;
     background-color: #6a6a6a;
+    overflow: hidden;
 }
 
 .container-header {
@@ -174,7 +175,6 @@ th {
     justify-content: space-between;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    z-index: 11;
 }
 
 .user-interface {
@@ -252,6 +252,7 @@ a.catalog-first-item:active {
 
 .servic-interface {
     text-transform: uppercase;
+    max-width: 670px;
 }
 
 .servic-interface li:first-child {
@@ -270,7 +271,7 @@ a.catalog-first-item:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -282,6 +283,7 @@ a.catalog-first-item:active {
     padding-left: 5px;
     letter-spacing: 0.2em;
     background-image: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+    text-align: center;
 }
 
 .btn-style:hover {
@@ -294,8 +296,8 @@ a.catalog-first-item:active {
 
 .logo-header {
     position: absolute;
-    left: 58px;
-    top: -30px;
+    left: 57px;
+    top: -28px;
 }
 
 .catalog-logo-header {
@@ -318,6 +320,7 @@ a.catalog-first-item:active {
 .footer-top li,
 .servic-interface li {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .header-top input {
@@ -329,7 +332,7 @@ a.catalog-first-item:active {
 
 .header-bottom,
 .footer-middle:not(p) {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -367,7 +370,7 @@ a.catalog-first-item:active {
     text-transform: none;
     line-height: 36px;
     letter-spacing: 0.015em;
-    z-index: 10;
+    
 }
 
 .catalog2-navigation-hidden {
@@ -388,22 +391,23 @@ a.catalog-first-item:active {
     text-transform: none;
     line-height: 36px;
     letter-spacing: 0.015em;
-    z-index: 10;
 }
 
 .catalog:hover .catalog-navigation-hidden {
     display: flex;
     background-color: #f7e296;
+    z-index: 2;
 }
 
 .catalog:hover .catalog2-navigation-hidden {
     display: flex;
     background-color: #f7e296;
+    z-index: 2;
 }
 
 .slider-col-2 p:first-of-type,
 .slider-col-2 p:nth-of-type(2) {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 47px;
@@ -444,14 +448,14 @@ a.catalog-first-item:active {
 }
 
 .slider-number {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 179.2px;
     color: #ffffff;
     position: absolute;
     right: 49px;
-    top: -26px;
+    top: -28px;
 }
 
 .promo-sliders,
@@ -462,6 +466,13 @@ a.catalog-first-item:active {
     margin: 0 auto;
 }
 
+.popular-item2-list, 
+.brands-list, 
+.footer-service-interface, 
+.social-buttons {
+    flex-wrap: wrap;
+}
+
 .slide-1-table {
     margin-top: -7px;
     width: 428px;
@@ -470,7 +481,7 @@ a.catalog-first-item:active {
 }
 
 .slide-1-table th {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 36px;
@@ -517,14 +528,15 @@ a.catalog-first-item:active {
 
 .popular li {
     display: inline-block;
-    font-family: "Gilroy";
+    vertical-align: middle;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
 }
 
 .services-slider-controls {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -532,7 +544,7 @@ a.catalog-first-item:active {
 
 .services-slider h2,
 .info h2 {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 47px;
@@ -549,11 +561,12 @@ a.catalog-first-item:active {
 
 .footer-middle li {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .info li {
     list-style: none;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -571,6 +584,7 @@ a.catalog-first-item:active {
 
 .breadcrumbs li {
     display: inline-block;
+    vertical-align: middle;
     color: rgba(0, 0, 0, .3);
 }
 
@@ -594,7 +608,7 @@ main h1 {
 
 .filter legend {
     list-style: none;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -613,7 +627,7 @@ main h1 {
 
 .goods-header h3,
 .goods-footer ul {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 16px;
@@ -632,6 +646,7 @@ main h1 {
 .goods-header li,
 .goods-footer li {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .goods-header-list a {
@@ -662,10 +677,14 @@ main h1 {
 }
 
 .item p {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
+    max-width: 290px;
+    display: inline-block;
+    vertical-align: middle;
+    word-wrap: break-word;
 }
 
 .menu-hover li:last-child {
@@ -703,6 +722,10 @@ main h1 {
     position: relative;
 }
 
+.search-style:focus-within input[type="submit"]{
+    display: block;
+}
+
 .search-style::after {
     content: url(../img/search.svg);
     position: absolute;
@@ -726,6 +749,7 @@ main h1 {
 
 .search-style input[type="search"] {
     display: inline-block;
+    vertical-align: middle;
     width: 358px;
     height: 50px;
     position: relative;
@@ -758,6 +782,7 @@ main h1 {
 .search-style input[type="search"]:focus~input[type="submit"],
 .search-style input[type="submit"]:active {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .logo-footer {
@@ -935,6 +960,7 @@ main h1 {
 
 .slider-controls label {
     display: inline-block;
+    vertical-align: middle;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -1013,6 +1039,7 @@ main h1 {
     width: 1160px;
     min-height: 486px;
     margin-top: -111px;
+    
 }
 
 .slider {
@@ -1058,8 +1085,8 @@ main h1 {
     display: flex;
     justify-content: space-around;
     width: 1160px;
-    height: 287px;
-    margin-top: 90px;
+    min-height: 287px;
+    margin-top: 86px;
 }
 
 .popular-item {
@@ -1187,7 +1214,7 @@ main h1 {
 }
 
 .services {
-    height: 288px;
+    min-height: 288px;
     background-color: #e5e5e5;
     margin-top: 150px;
 }
@@ -1195,6 +1222,7 @@ main h1 {
 .container-services {
     display: flex;
     width: 1160px;
+    height: 288px;
     margin: 0 auto;
 }
 
@@ -1212,10 +1240,17 @@ main h1 {
     width: 2728px;
 }
 
+.services-slider-sliders::after {
+    display: block; 
+    content: ""; 
+    clear: both;
+}
+
 .services-slider {
     width: 876px;
-    height: 319px;
+    min-height: 319px;
     display: inline-block;
+    vertical-align: middle;
     float: left;
     position: relative;
     z-index: 1;
@@ -1223,7 +1258,7 @@ main h1 {
 
 .services-slider-inner {
     width: 890px;
-    height: 319px;
+    min-height: 319px;
     overflow: hidden;
     position: relative;
     bottom: 30px;
@@ -1346,18 +1381,25 @@ main h1 {
 }
 
 .about-us p:first-of-type {
+    width: 430px;
     line-height: 30px;
     letter-spacing: 0.1px;
+    padding-top: 2px;
 }
 
 .about-us p:nth-of-type(2) {
-    margin-top: 32px;
-    line-height: 30px;
-    letter-spacing: 0.1px;
+    margin-top: 37px;
+    margin-bottom: 10px;
+    letter-spacing: -0.18px;
+}
+
+.about-us p:nth-of-type(3) {
+    margin-top: 13px;
+    letter-spacing: -0.18px;
 }
 
 .about-us ul:first-of-type {
-    margin-top: 65px;
+    margin-top: 72px;
     padding-left: 35px;
 }
 
@@ -1377,7 +1419,7 @@ main h1 {
 }
 
 .contacts h2 {
-    margin-bottom: 47px;
+    margin-bottom: 48px;
 }
 
 .contacts p:first-of-type {
@@ -1481,7 +1523,7 @@ main h1 {
 .container-catalog-main {
     display: flex;
     min-width: 1160px;
-    margin-top: 50px;
+    margin-top: 50px;    
 }
 
 .filter {
@@ -1493,12 +1535,12 @@ main h1 {
 
 .left {
     width: 100%;
-    background-image: linear-gradient(#dcdcdc 70px, #efefef 70px, #efefef 100%, #efefef 100%);
+    background-image: linear-gradient(#dcdcdc 0px, #dcdcdc 70px, #efefef 70px, #efefef 100%);
 }
 
 .right {
     width: 100%;
-    background-image: linear-gradient(#efefef 70px, transparent 70px, transparent 100%, transparent 100%);
+    background-image: linear-gradient(#efefef 0, #efefef 70px, transparent 70px, transparent 100%);
 }
 
 .goods {
@@ -1569,6 +1611,7 @@ main h1 {
 
 .grid-of-goods .item:first-child {
     margin-left: 74px;
+    margin-bottom: 34px;
 }
 
 .grid-of-goods .item:nth-child(2) {
@@ -1665,10 +1708,6 @@ main h1 {
 
 .menu-hover ul {
     list-style: none;
-}
-
-.menu-hover li:first-of-type {
-    letter-spacing: 0.em;
 }
 
 .filter-color-selection,
@@ -1899,7 +1938,7 @@ main h1 {
 
 .goods-footer-list {
     display: flex;
-    width: 100px;
+    min-width: 100px;
     justify-content: space-between;
     padding: 0;
     cursor: pointer;
@@ -1912,7 +1951,7 @@ main h1 {
     align-items: center;
     width: 120px;
     height: 70px;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 16px;
@@ -1960,14 +1999,16 @@ main h1 {
 .write-us {
     position: fixed;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+/*    top: 50%;*/
+    top: 100px;
+    margin-left: -450px;
+/*    transform: translate(-50%, -50%);*/    
     width: 960px;
     height: 580px;
     padding: 100px;
     background-color: #ffffff;
     z-index: 100;
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -1979,6 +2020,7 @@ main h1 {
 
 .write-us-show {
     display: block;
+    animation: bounce 0.6s;
 }
 
 .write-us-close {
@@ -1993,9 +2035,13 @@ main h1 {
     font-size: 14px;
 }
 
+.invalid-input {
+    background-color: red;
+}
+
 .write-us input[placeholder]:hover,
 .write-us textarea:hover {
-    opacity: 1;
+    opacity: 0.4;
 }
 
 .write-us input[placeholder]:active,
@@ -2066,11 +2112,17 @@ main h1 {
     opacity: 0.3;
 }
 
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .map {
     position: fixed;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+/*    top: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+    top: 100px;
+    margin-left: -450px;
     width: 960px;
     height: 559px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -2080,5 +2132,80 @@ main h1 {
 
 .map-show {
     display: block;
+    animation: bounce 0.6s;
 }
 
+.main-catalog {
+ overflow: hidden;
+}
+
+.container-catalog-main{
+ position: relative;
+ margin-left: auto;
+ margin-right: auto;
+ width: 1160px;
+}
+
+.left, .right{
+ position: absolute;
+ height: 100%;
+ top: 0;
+}
+
+.left{
+ right: 100%;
+}
+
+.right{
+ left: 100%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2300px);    
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.write-us input.invalid-input,
+.write-us textarea.invalid-input {
+    background-color: #f6dada;
+    border: none;
+}
+
+input.visually-hidden:focus + label{
+ opacity: .6;
+}
