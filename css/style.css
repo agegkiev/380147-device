@@ -1903,8 +1903,6 @@ main h1 {
 
 .filter-color-item1:hover::before,
 .filter-color-item1:hover::after,
-.filter-color-item1:focus::after,
-.filter-color-item1:focus::before,
 .filter-color-item2:hover::before,
 .filter-color-item2:hover::after,
 .filter-color-item3:hover::before,
@@ -1914,13 +1912,9 @@ main h1 {
 .filter-color-item5:hover::before,
 .filter-color-item5:hover::after,
 .filter-bluetooth-item1:hover::before,
-.filter-bluetooth-item1:focus::before,
 .filter-bluetooth-item1:hover::after,
-.filter-bluetooth-item1:focus::after,
 .filter-bluetooth-item2:hover::before,
-.filter-bluetooth-item2:focus::before,
-.filter-bluetooth-item2:hover::after,
-.filter-bluetooth-item2:focus::after{
+.filter-bluetooth-item2:hover::after {
     opacity: 0.6;
 }
 
@@ -2210,4 +2204,8 @@ main h1 {
 .write-us textarea.invalid-input {
     background-color: #f6dada;
     border: none;
+}
+
+input.visually-hidden:focus + label{
+ opacity: .6;
 }
