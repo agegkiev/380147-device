@@ -946,15 +946,15 @@ main h1 {
     width: 1160px;
 }
 
-#btn-1:focus~.slider-controls label[for="btn-1"],
-#btn-2:focus~.slider-controls label[for="btn-2"],
-#btn-3:focus~.slider-controls label[for="btn-3"] {
+.btn-1:focus~.slider-controls label[for="btn-1"],
+.btn-2:focus~.slider-controls label[for="btn-2"],
+.btn-3:focus~.slider-controls label[for="btn-3"] {
     opacity: .5
 }
 
-#btn-4:focus~.services-slider-controls label[for="btn-4"],
-#btn-5:focus~.services-slider-controls label[for="btn-5"],
-#btn-6:focus~.services-slider-controls label[for="btn-6"] {
+.btn-4:focus~.services-slider-controls label[for="btn-4"],
+.btn-5:focus~.services-slider-controls label[for="btn-5"],
+.btn-6:focus~.services-slider-controls label[for="btn-6"] {
     opacity: .5;
 }
 
@@ -981,32 +981,32 @@ main h1 {
     z-index: 10;
 }
 
-#btn-1:checked~.slider-controls label[for="btn-1"],
-#btn-2:checked~.slider-controls label[for="btn-2"],
-#btn-3:checked~.slider-controls label[for="btn-3"] {
+.btn-1:checked~.slider-controls label[for="btn-1"],
+.btn-2:checked~.slider-controls label[for="btn-2"],
+.btn-3:checked~.slider-controls label[for="btn-3"] {
     background-image: url("../img/slider-button.svg");
     background-position: 50% 50%;
     background-size: 10px;
 }
 
-#btn-1:checked~.slider-inner .slider-sliders {
+.btn-1:checked~.slider-inner .slider-sliders {
     transform: translate(0);
     transition: 0.7s;
 }
 
-#btn-2:checked~.slider-inner .slider-sliders {
+.btn-2:checked~.slider-inner .slider-sliders {
     transform: translate(-1160px);
     transition: 0.7s;
 }
 
-#btn-3:checked~.slider-inner .slider-sliders {
+.btn-3:checked~.slider-inner .slider-sliders {
     transform: translate(-2320px);
     transition: 0.7s;
 }
 
-#btn-4:checked~.services-slider-controls label[for="btn-4"],
-#btn-5:checked~.services-slider-controls label[for="btn-5"],
-#btn-6:checked~.services-slider-controls label[for="btn-6"] {
+.btn-4:checked~.services-slider-controls label[for="btn-4"],
+.btn-5:checked~.services-slider-controls label[for="btn-5"],
+.btn-6:checked~.services-slider-controls label[for="btn-6"] {
     width: 101%;
     justify-content: flex-start;
     padding-left: 20.5px;
@@ -1014,17 +1014,17 @@ main h1 {
     color: white;
 }
 
-#btn-4:checked~.services-slider-inner .services-slider-sliders {
+.btn-4:checked~.services-slider-inner .services-slider-sliders {
     transform: translate(0);
     transition: 0.7s;
 }
 
-#btn-5:checked~.services-slider-inner .services-slider-sliders {
+.btn-5:checked~.services-slider-inner .services-slider-sliders {
     transform: translate(-876px);
     transition: 0.7s;
 }
 
-#btn-6:checked~.services-slider-inner .services-slider-sliders {
+.btn-6:checked~.services-slider-inner .services-slider-sliders {
     transform: translate(-1752px);
     transition: 0.7s;
 }
