@@ -137,7 +137,7 @@ th {
     height: 74px;
 }
 
-.catalog-container-footer .footer-middle p {
+.footer-middle-p {
     padding-bottom: 2px;
 }
 
@@ -946,15 +946,15 @@ main h1 {
     width: 1160px;
 }
 
-#btn-1:focus~.slider-controls label[for="btn-1"],
-#btn-2:focus~.slider-controls label[for="btn-2"],
-#btn-3:focus~.slider-controls label[for="btn-3"] {
+.btn-1:focus~.slider-controls label[for="btn-1"],
+.btn-2:focus~.slider-controls label[for="btn-2"],
+.btn-3:focus~.slider-controls label[for="btn-3"] {
     opacity: .5
 }
 
-#btn-4:focus~.services-slider-controls label[for="btn-4"],
-#btn-5:focus~.services-slider-controls label[for="btn-5"],
-#btn-6:focus~.services-slider-controls label[for="btn-6"] {
+.btn-4:focus~.services-slider-controls label[for="btn-4"],
+.btn-5:focus~.services-slider-controls label[for="btn-5"],
+.btn-6:focus~.services-slider-controls label[for="btn-6"] {
     opacity: .5;
 }
 
@@ -981,32 +981,32 @@ main h1 {
     z-index: 10;
 }
 
-#btn-1:checked~.slider-controls label[for="btn-1"],
-#btn-2:checked~.slider-controls label[for="btn-2"],
-#btn-3:checked~.slider-controls label[for="btn-3"] {
+.btn-1:checked~.slider-controls label[for="btn-1"],
+.btn-2:checked~.slider-controls label[for="btn-2"],
+.btn-3:checked~.slider-controls label[for="btn-3"] {
     background-image: url("../img/slider-button.svg");
     background-position: 50% 50%;
     background-size: 10px;
 }
 
-#btn-1:checked~.slider-inner .slider-sliders {
+.btn-1:checked~.slider-inner .slider-sliders {
     transform: translate(0);
     transition: 0.7s;
 }
 
-#btn-2:checked~.slider-inner .slider-sliders {
+.btn-2:checked~.slider-inner .slider-sliders {
     transform: translate(-1160px);
     transition: 0.7s;
 }
 
-#btn-3:checked~.slider-inner .slider-sliders {
+.btn-3:checked~.slider-inner .slider-sliders {
     transform: translate(-2320px);
     transition: 0.7s;
 }
 
-#btn-4:checked~.services-slider-controls label[for="btn-4"],
-#btn-5:checked~.services-slider-controls label[for="btn-5"],
-#btn-6:checked~.services-slider-controls label[for="btn-6"] {
+.btn-4:checked~.services-slider-controls label[for="btn-4"],
+.btn-5:checked~.services-slider-controls label[for="btn-5"],
+.btn-6:checked~.services-slider-controls label[for="btn-6"] {
     width: 101%;
     justify-content: flex-start;
     padding-left: 20.5px;
@@ -1014,17 +1014,17 @@ main h1 {
     color: white;
 }
 
-#btn-4:checked~.services-slider-inner .services-slider-sliders {
+.btn-4:checked~.services-slider-inner .services-slider-sliders {
     transform: translate(0);
     transition: 0.7s;
 }
 
-#btn-5:checked~.services-slider-inner .services-slider-sliders {
+.btn-5:checked~.services-slider-inner .services-slider-sliders {
     transform: translate(-876px);
     transition: 0.7s;
 }
 
-#btn-6:checked~.services-slider-inner .services-slider-sliders {
+.btn-6:checked~.services-slider-inner .services-slider-sliders {
     transform: translate(-1752px);
     transition: 0.7s;
 }
@@ -1650,15 +1650,15 @@ main h1 {
     opacity: 0.7;
 }
 
-.menu-hover li:nth-child(2) a {
+.menu-hover-p a {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.menu-hover li:nth-child(2) a:hover {
+.menu-hover-p a:hover {
     color: rgba(0, 0, 0, 1);
 }
 
-.menu-hover li:nth-child(2) a:active {
+.menu-hover-p a:active {
     color: rgba(0, 0, 0, .2);
 }
 
@@ -1678,7 +1678,7 @@ main h1 {
     margin-bottom: 17px;
 }
 
-.menu-hover .btn-style span {
+.menu-hover-span {
     letter-spacing: 0.20em;
 }
 
@@ -1894,7 +1894,7 @@ main h1 {
     opacity: 0.6;
 }
 
-.filter-bluetooth-selection+input[type="submit"] {
+.filter-bluetooth-selection + input[type="submit"] {
     border: none;
     background-color: inherit;
 }
@@ -1954,21 +1954,21 @@ main h1 {
     color: rgba(0, 0, 0, .3)
 }
 
-.goods-footer-list li:nth-child(1) a,
-.goods-footer-list li:nth-child(2) a,
-.goods-footer-list li:nth-child(3) a {
+.goods-footer-navi1 a,
+.goods-footer-navi2 a,
+.goods-footer-navi3 a {
     color: rgba(0, 0, 0, .3)
 }
 
-.goods-footer-list li:nth-child(1) a:hover,
-.goods-footer-list li:nth-child(2) a:hover,
-.goods-footer-list li:nth-child(3) a:hover {
+.goods-footer-navi1 a:hover,
+.goods-footer-navi2 a:hover,
+.goods-footer-navi3 a:hover {
     color: rgba(0, 0, 0, .6)
 }
 
-.goods-footer-list li:nth-child(1) a:active,
-.goods-footer-list li:nth-child(2) a:active,
-.goods-footer-list li:nth-child(3) a:active {
+.goods-footer-navi1 a:active,
+.goods-footer-navi2 a:active,
+.goods-footer-navi3 a:active {
     color: rgba(0, 0, 0, 1)
 }
 
